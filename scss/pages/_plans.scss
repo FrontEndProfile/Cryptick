@@ -1,0 +1,75 @@
+.plan {
+  &__card {
+    background: white;
+    @include section__(6);
+    width: 350px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 50px 50px;
+    border-radius: 2rem;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .prize {
+      height: fit-content;
+      padding-bottom: 6rem;
+    }
+    ul {
+      li {
+        position: relative;
+        width: fit-content;
+        margin-bottom: 10px;
+        color: $light__gray;
+        font-weight: 500;
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: -20px;
+          transform: translate(-50%,-50%);
+          content: "";
+          width: 2rem;
+          height: 2rem;
+          // background-color: red;
+          background-image: url(../images/checked_icon.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+
+        }
+      }
+    }
+  }
+  .center__card {
+    height: 680px;
+  }
+  .slick-track {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  @include media__max(1200){
+    &__card {
+      margin: 50px auto;
+    } 
+  }
+  @include media__max(550){
+    &__card {
+      width: 300px !important;
+      margin-left: 0;
+      margin-right: 0;
+      margin: auto;
+      margin-bottom: 3rem;
+      height: 500px;
+    }
+    .center__card {
+      height: 620px;
+    }
+  }
+}
+@include media__max(991){
+  .bg__blue__light {
+    background-color: white;
+  }
+  .plan_space_top {
+    margin-top: 11rem;
+  }
+}
+

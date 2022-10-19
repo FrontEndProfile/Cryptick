@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FAV ADD  -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- STYLE LINK  -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>DASHBOARD !</title>
+  </head>
+  <body>
+    <header id="header" class="py-4 bg__white">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container px-0">
+          <a class="navbar-brand" href="index.html">
+            <img class="img-fluid" src="images/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0 align-items-lg-center align-items-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="dashboard.html">
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  Ajouter Donnees
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Voir les donnees
+                </a>
+              </li>
+              
+            </ul>
+            <!-- account id  -->
+            <!-- Example single danger button -->
+            <div class="d-flex justify-content-end me-5 me-md-0">
+              <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle shadow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="w-100" src="images/user.png" alt="">
+                </button>
+                <ul class="dropdown-menu primary__radius shadow-lg dropdown-menu-end border-0">
+                  <li><a class="dropdown-item d-flex align-items-baseline" href="plans.html">
+                    <div class="">
+                      <span><img class="icon" src="images/plan_icon.jpeg" alt=""></span> 
+                    </div>
+                    <div class="">
+                      <p class="mb-0 font__18 line_0_7 text__blue__dark">Plane</p><small class="font__13 text-black-50">chose your plan</small>
+                    </div>
+                  </a></li>
+  
+                  <li><a class="dropdown-item d-flex align-items-baseline" href="sitting.html">
+                    <div class="">
+                      <span><img class="icon" src="images/sitting.jpeg" alt=""></span> 
+                    </div>
+                    <div class="">
+                      <p class="mb-0 font__18 line_0_7 text__blue__dark">Sittings</p><small class="font__13 text-black-50">Mange your Sittings</small>
+                    </div>
+                  </a></li>
+  
+                  <li><a class="dropdown-item d-flex align-items-baseline" href="login.html">
+                    <div class="">
+                      <span><img class="icon" src="images/plan_icon.jpeg" alt=""></span> 
+                    </div>
+                    <div class="">
+                      <p class="mb-0 font__18 line_0_7 text__blue__dark">LogOut</p><small class="font__13 text-black-50">Logout out Dashboard</small>
+                    </div>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </nav>
+    </header>
+    <section class="page__tittle text-center">
+      <h2 class="pages__tittle font__700 pb-5">Dashboard</h2>
+    </section>
+    <section class="fix_api">
+      <div class="container">
+        <!-- BTN  -->
+        <div class="mb-5 width_fit d-block d-lg-none mx-auto">
+          <div class="coin__info d-flex justify-content-end">
+            <button type="button" class="btn__base coin__btn w-100 text-white d-block bg__blue border-0  d-flex align-items-center border__r_1 justify-content-center min__w_200">
+              <div class="coin__add me-4">
+                <img class="w-100" src="images/plus_white.png" alt="">
+              </div>
+              Ajouter plus de donnees
+            </button>
+          </div>
+        </div>
+        <div class="row justify-content-between mx-0 dashboard_portfolio">
+          <div class="col-lg-8">
+            <div class="block px-5">
+
+              <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+                <div class="mb-3">
+                  <h3 class="font__25 font__700 mb-2">Portfolio</h3>
+                  <p class="font__15 font__500 text-black-50">
+                    $48,500
+                  </p>
+                </div>
+  
+                <div class="d-flex flex-wrap mb-3 d-none d-lg-block">
+                  <div class="me-5 chart__control">
+                    <a href="#" class="d-flex align-items-center font__15 font__600 text__blue">
+                      <div class="chart__bt me-4 tab__blue"></div>
+                      <div>Portfolio Value</div>
+                    </a>
+                  </div>
+                  <div class="me-3 chart__control">
+                    <a href="#" class="d-flex align-items-center font__15 font__600 tab__green_text">
+                      <div class="chart__bt me-4 tab__green"></div>
+                      Portfolio Value
+                    </a>
+                  </div>
+                </div>
+  
+                <div class="chart__btns mb-3 d-none d-lg-block">
+                  <ul class="list-unstyled d-flex flex-wrap">
+                    <li class="me-4 border border-1 radius_mini mb-3"><a class="text-capitalize" href="#">all</a></li>
+                    <li class="me-4 border border-1 radius_mini mb-3"><a class="text-capitalize" href="#">ty</a></li>
+                    <li class="me-4 border border-1 radius_mini mb-3"><a class="text-capitalize" href="#">last year</a></li>
+                    <li class="me-4 border border-1 radius_mini mb-3"><a class="text-capitalize" href="#">this year</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <img class="w-100" src="images/dashboard__01.png" alt="">
+            </div>
+
+            <div class="block">
+              <div class="row mx-0 align-items-center">
+                <div class="col px-5 overflow-auto">
+                  <div class="card__tittle mb-5">
+                    <h2 class="font__900">Holdings
+                    </h2>
+                  </div>
+                  <div class=" card_header d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <h3 class="mx-auto font__700 font__15 text-center">Asset
+                      </h3>
+                    </div>
+                    <div>
+                      <h3 class="mx-3 font__700 font__15 text-center">
+                        Balance
+                      </h3>
+                    </div>
+                    <div>
+                      <h3 class="mx-3 font__700 font__15 text-center">
+                        Market Value
+                      </h3>
+                      
+                    </div>
+                    <div>
+                      <h3 class="mx-3 font__700 font__15 text-center">Market Value
+                      </h3>
+                      
+                    </div>
+                    <div>
+                      <h3 class="mx-auto font__700 font__15 text-center">ROI</h3>
+                    </div>
+                  </div>
+                  <div class="table__drop">
+                    
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item border-0">
+                        <h2 class="accordion-header shadow mb-4 px-4 py-3" id="flush-headingOne">
+                          <button class="accordion-button shadow-none collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <div class="d-flex align-items-center">
+                              <img class="accordion__icon" src="images/bitcoin.svg" alt="">
+                              <h3 class="mx-4 font__400">Bitcoin</h3>
+                            </div>
+                            <div>
+                              <h5 class="mx-4 font__400 font__15">
+                                100.0002
+                              </h5>
+                            </div>
+                            <div>
+                              <h5 class="mx-4 font__500 font__15 mb-2">
+                                $ 48,501
+                              </h5>
+                              <p class="text-center font__400 font__13">
+                                CA $500 / unit
+                              </p>
+                            </div>
+                            <div>
+                              <h5 class="mx-4 font__500 font__15 mb-2">
+                                $ 48,501
+                              </h5>
+                              <p class="text-center font__400 font__13">
+                                CA $500 / unit
+                              </p>
+                            </div>
+                            <div>
+                              <h5 class="mx-4 font__400 font__15 text__red">
+                                - 2.81%
+                              </h5>
+                            </div>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body mb-4">
+                            <!-- SUB-TABLE  -->
+                            <table class="table">
+                              <thead class="">
+                                <tr class="">
+                                  <th scope="col" class="font__15 font__500 py-3 text-center">
+                                    Wallet
+                                  </th>
+                                  <th scope="col" class="font__15 font__500 py-3 text-center">
+                                    Balance
+                                  </th>
+                                  <th scope="col" class="font__15 font__500 py-3 text-center">
+                                    Value
+                                  </th>
+                                  <th scope="col" class="font__15 font__500 py-3 text-center">
+                                    Allocation
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody class="border-0">
+                                <tr>
+                                  <th scope="row" class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </th>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    $ 48,501
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3 d-flex justify-content-center align-items-center">
+                                    25%
+                                    <div class="box__zone tab__green"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </th>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    $ 48,501
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3 d-flex justify-content-center align-items-center">
+                                    25%
+                                    <div class="box__zone tab__blue"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </th>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    $ 48,501
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3 d-flex justify-content-center align-items-center">
+                                    25%
+                                    <div class="box__zone tab__red"></div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- NEXT DUMMY  -->
+                      <div class="accordion-item border-0">
+                        <h2 class="accordion-header shadow mb-4 px-4 py-3" id="flush-headingTwo">
+                          <button class="accordion-button shadow-none collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <div class="d-flex align-items-center">
+                              <img class="accordion__icon" src="images/bitcoin.svg" alt="">
+                              <h3 class="mx-4 font__400">Bitcoin</h3>
+                            </div>
+                            <div>
+                              <h5 class="mx-4 font__400 font__15">
+                                100.0002
+                              </h5>
+                            </div>
+                            <div>
+                              <h5 class="mx-4 font__500 font__15 mb-2">
+                                $ 48,501
+                              </h5>
+                              <p class="text-center font__400 font__13">
+                                CA $500 / unit
+                              </p>
+                            </div>
+                            <div>
+                              <h5 class="mx-4 font__500 font__15 mb-2">
+                                $ 48,501
+                              </h5>
+                              <p class="text-center font__400 font__13">
+                                CA $500 / unit
+                              </p>
+                            </div>
+                            <div>
+                              <h5 class="mx-4 font__400 font__15">
+                                - 2.81%
+                              </h5>
+                            </div>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body mb-4">
+                            <!-- SUB-TABLE  -->
+                            <table class="table">
+                              <thead class="">
+                                <tr class="">
+                                  <th scope="col" class="font__15 font__500 py-3 text-center">
+                                    Wallet
+                                  </th>
+                                  <th scope="col" class="font__15 font__500 py-3 text-center">
+                                    Balance
+                                  </th>
+                                  <th scope="col" class="font__15 font__500 py-3 text-center">
+                                    Value
+                                  </th>
+                                  <th scope="col" class="font__15 font__500 py-3 text-center">
+                                    Allocation
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody class="border-0">
+                                <tr>
+                                  <th scope="row" class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </th>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    $ 48,501
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3 d-flex justify-content-center align-items-center">
+                                    25%
+                                    <div class="box__zone tab__green"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </th>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    $ 48,501
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3 d-flex justify-content-center align-items-center">
+                                    25%
+                                    <div class="box__zone tab__blue"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </th>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    $ 48,501
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3 d-flex justify-content-center align-items-center">
+                                    25%
+                                    <div class="box__zone tab__red"></div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-0">
+                        <h2 class="accordion-header shadow mb-4 px-4 py-3" id="flush-headingThree">
+                          <button class="accordion-button shadow-none collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <div class="d-flex align-items-center">
+                              <img class="accordion__icon" src="images/bitcoin.svg" alt="">
+                              <h3 class="mx-4 font__400">Bitcoin</h3>
+                            </div>
+                            <div>
+                              <h5 class="mx-4 font__400 font__15">
+                                100.0002
+                              </h5>
+                            </div>
+                            <div>
+                              <h5 class="mx-4 font__500 font__15 mb-2">
+                                $ 48,501
+                              </h5>
+                              <p class="text-center font__400 font__13">
+                                CA $500 / unit
+                              </p>
+                            </div>
+                            <div>
+                              <h5 class="mx-4 font__500 font__15 mb-2">
+                                $ 48,501
+                              </h5>
+                              <p class="text-center font__400 font__13">
+                                CA $500 / unit
+                              </p>
+                            </div>
+                            <div>
+                              <h5 class="mx-4 font__400 font__15 text__green">
+                                - 2.81%
+                              </h5>
+                            </div>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <!-- SUB-TABLE  -->
+                            <table class="table">
+                              <thead class="">
+                                <tr class="">
+                                  <th scope="col" class="font__15 font__500 py-3 text-center">
+                                    Wallet
+                                  </th>
+                                  <th scope="col" class="font__15 font__500 py-3 text-center">
+                                    Balance
+                                  </th>
+                                  <th scope="col" class="font__15 font__500 py-3 text-center">
+                                    Value
+                                  </th>
+                                  <th scope="col" class="font__15 font__500 py-3 text-center">
+                                    Allocation
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody class="border-0">
+                                <tr>
+                                  <th scope="row" class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </th>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    $ 48,501
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3 d-flex justify-content-center align-items-center">
+                                    25%
+                                    <div class="box__zone tab__green"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </th>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    $ 48,501
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3 d-flex justify-content-center align-items-center">
+                                    25%
+                                    <div class="box__zone tab__blue"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </th>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    Binance Smart Wallet
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3">
+                                    $ 48,501
+                                  </td>
+                                  <td class="text-center font__400 font__15 py-3 d-flex justify-content-center align-items-center">
+                                    25%
+                                    <div class="box__zone tab__red"></div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-lg-4 ps-5">
+            <!-- BTN  -->
+            <div class="mb-5 d-lg-block d-none">
+              <div class="coin__info d-flex justify-content-end">
+                <button type="button" class="btn__base coin__btn w-100 text-white d-block bg__blue border-0 mx-3 d-flex align-items-center border__r_1 justify-content-center">
+                  <div class="coin__add me-4">
+                    <img class="w-100" src="images/plus_white.png" alt="">
+                  </div>
+                  Ajouter plus de donnees
+                </button>
+              </div>
+            </div>
+            <!-- WARN  -->
+            <div class="pb-3">
+              <div class="card_layout text-start text-white blue__card  mb-5 mx-auto">
+                <h2 class="mb-5">Impots : 2021
+                </h2>
+                <h2 class="py-5 font__700 text-capitalize">
+                  Only for Premium Memebrs
+                </h2>
+                <div class="my-5 pt-5 text-center">
+                <a class="px-5 py-3 bg-white border__r_1 text__blue font__15 font__500" href="#">
+                  Subscribe to Premium
+                </a>
+  
+                </div>
+  
+              </div>
+            </div>
+
+            <!-- WARN  -->
+            <div class="block text-start px-5">
+              <h2 class="mb-0">
+                Markets
+              </h2>
+              <div class="circle">
+                <img class="w-100" src="images/dashboard__02.png" alt="">
+              </div>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

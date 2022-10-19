@@ -1,0 +1,117 @@
+.import {
+  .blue_import {
+    background-color: $blue;
+  }
+}
+.tick__icon {
+  width: 3.5rem;
+}
+.menu_hover {
+  background-color: $light__v;
+  width: fit-content;
+  margin: auto;
+  border-radius: 1rem;
+  li {
+    a {
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%,-50%);
+        content: "";
+        width: 1px;
+        height: 2rem;
+        background-color: $light__gray;
+        
+      }
+      
+      &:hover {
+        
+      }
+    }
+    
+    
+  }
+}
+.delete_pop {
+  width: 17rem;
+  height: auto;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  position: relative;
+  &::after {
+    position: absolute;
+    right: 10%;
+    bottom: -10%;
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 13px solid #ffff;
+  }
+  display: none ;
+}
+.menu_hover.btn:hover .delete_pop{
+  display: block;
+}
+
+.see__tables {
+  @include section__(12)
+}
+@include media__max(767){
+  .menu_hover {
+    display: none;
+  }
+  .import {
+    .coin__btn {
+      margin: auto !important;
+      padding: 15px 35px !important;
+      width: fit-content !important;
+      font-size: 1.3rem;
+      min-width: none !important;
+    }
+  }
+  .totasty {
+    h3 {
+      font-size: 2rem;
+    }
+    .tick__icon {
+      width: 2.5rem;
+    }
+  }
+}
+@include media__max(500){
+  .check_tittle {
+    font-size: 1.8rem;
+  }
+  .form-check {
+    label {
+      font-size: 1.3rem;
+    }
+    input {
+      padding: 5px !important;
+    }
+  }
+  .totasty {
+    h3 {
+      font-size: 1.8rem;
+      padding: 0 !important;
+    }
+    .tick__icon {
+      width: 2rem;
+    }
+  }
+}
+@include media__max(420){
+  .totasty {
+    h3 {
+      font-size: 1.5rem;
+    }
+    .tick__icon {
+      width: 1.7rem;
+    }
+  }
+}

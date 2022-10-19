@@ -1,0 +1,215 @@
+.user {
+  width: 2.5rem;
+  &__drop {
+    width: 24rem;
+    height: 300px;
+    background-color: white;
+    transform: translate(0%,-4%);
+    z-index: 99;
+    border-radius: 2.5rem;
+  }
+  button {
+    border: none;
+  }
+  &__name {
+    width: fit-content;
+    margin:auto;
+  }
+  .dropdown-toggle::after {
+    border: none;
+  }
+  .dropdown-menu {
+    top: -0.7rem;
+    left: -19rem;
+    z-index: -1;
+    border: none;
+  }
+}
+.user__dash {
+  @include media__max(991){
+    display: flex;
+    justify-content: end;
+  }
+  @include media__max(600){
+    margin-right: 3rem;
+}
+}
+.block {
+  border-radius: 3rem;
+  background-color: white;
+  @include section__(4);
+  @include margin__b(4);
+  // accordion
+  .accordion-button:not(.collapsed){
+    background-color: transparent !important;
+  }
+}
+.coin {
+  &__type {
+    width: 70px;
+  }
+  &__tittle {
+    h4 {
+      color: black;
+      text-transform: capitalize;
+      @include font__size(3);
+      font-weight: 500;
+    }
+  }
+
+  &__add {
+   width: 20px;
+  }
+  &__btn {
+    box-shadow: rgba(33, 91, 250, 0.3) 0px 19px 38px, rgba(33, 91, 250, 0.22) 0px 15px 12px;
+
+  }
+}
+.accordion-button {
+  display: flex;
+}
+.accordion__icon {
+  width: 40px;
+}
+.accordion-button::after { 
+  position: absolute;
+  top: 40%;
+  right: 5rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  background-image: url(../images/arrow.png ) !important;
+  background-size: 4rem;
+}
+
+.card_layout {
+  background-color: #f8ce7a;
+  background-image: linear-gradient(60deg, #f8ce7a 32%, #f39f85 63%);
+  @include section__(3);
+  @include pad__l_r(3);
+  border-radius: 2.2rem;
+  h1 {
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.561);
+  }
+}
+.warning__card {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  max-width: 38rem;
+  height: auto;
+  min-width: 22rem;
+  &::after{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%,-50%);
+    content: "";
+    width: 80%;
+    height: 60%;
+    background-image: url(../../images/warning.jpeg);
+    background-size: 100% 100%;
+    z-index: -1;
+    opacity: 0.6;
+  }
+  a {
+    color: #f39f85 !important;
+    padding: 1.4rem 4rem !important;
+  }
+}
+.blue__card {
+  position: relative;
+  overflow: hidden;
+  background-color: #1d88fc;
+  background-image: linear-gradient(180deg, #1d88fc 45%, #0ab8fd 91%);  
+  z-index: 1;
+  max-width: 38rem;
+  height: 33rem;
+  min-width: 30rem;
+  &::after{
+    position: absolute;
+    top: 70%;
+    right: 0%;
+    transform: translate(-0%,-50%);
+    content: "";
+    width: 50%;
+    height: 60%;
+    background-image: url(../../images/star.png);
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.6;
+  }
+  a {
+    color: black !important;
+    padding: 1.4rem 4rem !important;
+  }
+}
+
+// ALL 
+@include media__max(767){
+  .coin__info  {
+    .btn__base {
+      margin-left: 0 !important;
+      padding: 1.5rem 2.5rem !important;
+      font-size: 1.3rem;
+    }
+  }
+  .coin__type  {
+      width: 50px;
+      margin-right: 1.2rem !important;
+  }
+  .coin__tittle {
+    h4 {
+      font-size: 2rem;
+    }
+  }
+  .coin__add {
+    width: 15px;
+    margin-right: 8px !important;
+  }
+}
+@include media__max(500){
+  .coin__info  {
+    .btn__base {
+      font-size: 1.1rem;
+      padding: 1.1rem 2rem !important;
+      box-shadow: none;
+      min-width: 130px !important;
+    }
+  }
+  .coin__type {
+    width: 4rem;
+  }
+  .coin__tittle h4 {
+    font-size: 1.7rem;
+  }
+  .api__add_coin {
+    .block {
+      @include section__(2);
+      border-radius: 1.5rem;
+    }
+  }
+  .api__add_coin {
+    .accordion {
+      &-header {
+        h5 {
+          font-size: 1.7rem;
+        }
+      }
+      &__icon {
+        width: 25px;
+      }
+      .accordion-button::after { 
+        width: 2rem;
+        height: 2rem;
+        background-size: 2rem;
+      }
+    }
+  }
+  .sign_in {
+    .row {
+      padding: 2rem 0;
+    }
+  }
+}

@@ -1,0 +1,145 @@
+// AFTER ICON 
+.page__tittle{
+  height: auto;
+  width: 100%;
+  position: relative;
+  z-index: -2;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left:50%;
+    transform: translate(-50%);
+    width: 100%;
+    height: 35vh;
+    background-color: transparent;
+    background-image: url(../images/about__top.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-y: 88%;
+    background-position-x: center;
+    z-index: -99;
+    transition: 0.4s all;
+    @include media__max(991){
+      transition: 0.4s all;
+      background-size: 323%;
+      background-repeat: no-repeat;
+      background-position-y: 90%;
+      background-position-x: 40%;
+    }
+  }
+  
+}
+.cryptick__about {
+  @include section__(12);
+}
+.cryptick__content {
+  background-color: white;
+  @include media__max(550){
+    background-color: $light__sky;
+    @include section__(6)
+  }
+}
+.info__img {
+  width: 35rem;
+  height: 35rem;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: top top;
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.404) 0px 7px 29px 0px;
+  border: 2px solid $dark__blue;
+}
+
+.contact__layout {
+  background: white;
+  border-radius: 5rem;
+  box-shadow: rgba(42, 12, 46, 0.199) 0px 48px 100px 0px;
+  @include section__(7);
+  @include pad__l_r(7);
+  form {
+    input {
+      border: none;
+      border-bottom: 1.5px solid #c5c5c5;
+      border-radius: 0;
+      color: $dark__blue !important;
+      @include font__size(1.8);
+      @include media__max(991){
+        border: 1.75px solid #c5c5c5;
+        border-radius: 1.2rem;
+        padding: 0.8rem 1.9rem;
+      }
+    }
+    textarea {
+      @include media__max(991){
+        border: 1.75px solid #c5c5c5;
+        border-radius: 1.2rem;
+        padding: 0.8rem 1.9rem;
+      }
+    }
+    label {
+      color: $light__gray;
+      text-transform: capitalize;
+    }
+    .form-control:focus {
+      background-color: transparent;
+      border-color: none;
+      outline: 0;
+      box-shadow: none;
+    }
+    .btn__base {
+      box-shadow: rgba(110, 17, 96, 0.582) 0px 25px 50px -12px;
+      transition: 0.3s all;
+      &:hover {
+        box-shadow: rgba(110, 17, 96, 0.582) 0px 2px 50px -4px;
+        transition: 0.3s all;
+      }
+    }
+  }
+  @include media__max (991){
+    box-shadow: none;
+  }
+  @include media__max (550){
+    @include section__(2);
+    padding-bottom: 15rem !important;
+    form {
+      input,textarea {
+        background-color: $light__v;
+      }
+    }
+  }
+}
+.info {
+  &__img {
+    @include media__max(991){
+      width: 30rem;
+      height: 30rem;
+    }
+    @include media__max(550){
+      width: 24rem;
+      height: 24rem;
+    }
+  }
+  &__content {
+    // @include media__max(991){
+    // }
+  }
+}
+// .about__contactinfo {
+//   h3 {
+//     font-size: 5.5rem;
+//   }
+// }
+@include media__max(550){
+  .cryptick__about {
+    img {
+      width: 20rem;
+    }
+  }
+  .about__contactinfo {
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem !important;
+    }
+  }
+}

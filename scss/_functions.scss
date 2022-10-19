@@ -1,0 +1,41 @@
+@mixin family__($family) {
+  font-family: $family;
+}
+@mixin font__size($value:1,$unit:rem,) {
+  font-size: $value + $unit;
+}
+@mixin head__logo($value:1,$unit:rem,) {
+  width: $value + $unit;
+}
+@mixin space__lr($value:1,$unit:rem,) {
+  margin: $value + $unit;
+}
+@mixin margin__b($value:1,$unit:rem,) {
+  margin-bottom: $value + $unit;
+}
+@mixin margin__r($value:1,$unit:rem,) {
+  margin-right: $value + $unit;
+}
+// SECTIONS 
+@mixin section__($value:1,$unit:rem,) {
+  padding-top: $value + $unit;
+  padding-bottom: $value + $unit;
+}
+@mixin padding__r($value:1,$unit:rem,) {
+  padding-right: $value + $unit;
+}
+// CONTACT CARD
+@mixin pad__l_r($value:1,$unit:rem,) {
+  padding-left: $value + $unit;
+  padding-right: $value + $unit;
+}
+@mixin media__max($value:0,$unit:px,) {
+  @media (max-width: $value + $unit) {
+    @content;
+  }
+}
+@mixin media__min($value:0,$unit:px,) {
+  @media (min-width: $value + $unit) {
+    @content;
+  }
+}

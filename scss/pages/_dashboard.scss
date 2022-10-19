@@ -1,0 +1,72 @@
+.table__drop {
+  .accordion-button {
+    @include padding__r(5);
+    &::after {
+      right: 1rem;
+      top: 30%;
+      background-size: 2.2rem;
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+  }
+  .accordion-header {
+    border-radius: 0.5rem;
+  }
+  .accordion-body {
+    background-color: $light__v;
+    border-radius: 1.5rem;
+    @include section__(2.5);
+    @include pad__l_r(2.5);
+  }
+  .table > :not(caption) > * > * {
+    border-bottom: 0.5px solid $light__gray;
+  }
+  // .accordion {
+  //   @include media__max(767){
+  //     background-color: red !important;
+  //     width: 20rem;
+  //   }
+  // }
+  @include media__max(767){
+        width: 65rem;
+        padding-right: 2rem;
+  }
+}
+.card_header  {
+  @include media__max(767){
+    width: 65rem;
+    // padding-right: 2rem;
+}
+}
+.box__zone {
+  width: 2rem;
+  height:2rem;
+  margin: 0px 0.9rem;
+  border-radius: 0.5rem;
+}
+.card_header {
+  > div {
+    width: 20%;
+    @include section__(2);
+    color: $blue;
+  }
+}
+.dashboard_portfolio {
+  .coin__info {
+    button {
+      padding: 3rem 5rem !important;
+    }
+  }
+  .card_layout.blue__card {
+    min-width: 18rem;
+    
+  }
+  @include media__max(550){
+    .blue__card {
+      a {
+        padding: 1.2rem 3rem !important;
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.see_data {
+  position: relative;
+  width: 40rem;
+  input {
+    width: 100%;
+    border-radius: 2rem;
+    border: 1px solid $light__gray;
+    padding-left: 6.5rem !important;
+  }
+  .input_icon {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%,-50%);
+  }
+}
+.see__tables {
+  table {
+    thead {
+      background: $light__v;
+      tr {
+        th {
+          border-bottom: none;
+          padding: 2rem 1.5rem;
+          text-align: center;
+          border-radius: 0.2rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

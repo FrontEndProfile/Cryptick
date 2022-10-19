@@ -1,0 +1,50 @@
+// === WEBPAGE FONT DEFAULT ===
+body,* {
+  @include family__($roboto);
+  @include media__max(2000){
+    transition: 0.5s all !important;
+  }
+  ::selection {
+    color: #ffffff;
+    background-color: #568af1
+  }
+  
+}
+// === HEADER LOGO SWITCH ===
+.navbar-brand {
+  img {
+    @include head__logo(19)  //logo--size
+  }
+}
+// === HEADER MENU SWITCH ===
+header > nav ul li > a {
+  @include font__size(1.8)   //font--size
+}
+header > nav ul li {
+  @include space__lr(1)       //SPACING _ LEFT _ RIGHT > VALUE > DEFAULT
+}
+// ALL SECTIONS 
+section,header,footer {
+  @include section__(7);   //SPACING _ TOP _ BOTTOM > :)
+  @include media__max(600){
+    @include pad__l_r(1.2);  //SPACING _ LEFT _ RIGHT > :) >> SMALL SCREEN
+    @include section__(3)
+  }      
+}
+
+// CONTACT CARD DESKTOP
+.padding__left_right {
+  @include pad__l_r()
+}
+// ALL BTNS 
+// .btn__base {
+//   @include font__size(1.6)
+// }
+
+// INFO PADDING-TOP BIG
+.pad__top_big {
+  padding-top: 20rem;
+  @include media__max(767){
+    padding-top: 2rem;
+  }
+}

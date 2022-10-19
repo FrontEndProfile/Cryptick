@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FAV ADD  -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- STYLE LINK  -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>API !</title>
+  </head>
+  <body>
+    <header id="header" class="py-4 bg__white">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container px-0">
+          <a class="navbar-brand" href="index.html">
+            <img class="img-fluid" src="images/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0 align-items-lg-center align-items-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="dashboard.html">
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  Ajouter Donnees
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Voir les donnees
+                </a>
+              </li>
+              
+            </ul>
+            <!-- account id  -->
+            <!-- Example single danger button -->
+            <div class="d-flex justify-content-end me-5 me-md-0">
+              <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle shadow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="w-100" src="images/user.png" alt="">
+                </button>
+                <ul class="dropdown-menu primary__radius shadow-lg dropdown-menu-end border-0">
+                  <li><a class="dropdown-item d-flex align-items-baseline" href="plans.html">
+                    <div class="">
+                      <span><img class="icon" src="images/plan_icon.jpeg" alt=""></span> 
+                    </div>
+                    <div class="">
+                      <p class="mb-0 font__18 line_0_7 text__blue__dark">Plane</p><small class="font__13 text-black-50">chose your plan</small>
+                    </div>
+                  </a></li>
+  
+                  <li><a class="dropdown-item d-flex align-items-baseline" href="sitting.html">
+                    <div class="">
+                      <span><img class="icon" src="images/sitting.jpeg" alt=""></span> 
+                    </div>
+                    <div class="">
+                      <p class="mb-0 font__18 line_0_7 text__blue__dark">Sittings</p><small class="font__13 text-black-50">Mange your Sittings</small>
+                    </div>
+                  </a></li>
+  
+                  <li><a class="dropdown-item d-flex align-items-baseline" href="login.html">
+                    <div class="">
+                      <span><img class="icon" src="images/plan_icon.jpeg" alt=""></span> 
+                    </div>
+                    <div class="">
+                      <p class="mb-0 font__18 line_0_7 text__blue__dark">LogOut</p><small class="font__13 text-black-50">Logout out Dashboard</small>
+                    </div>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </nav>
+    </header>
+    <section class="page__tittle text-center">
+      <h2 class="pages__tittle font__700 pb-5">API</h2>
+    </section>
+
+    <section class="api__add_coin fix_api">
+      <div class="container-md px-sm-5 px-0">
+        <div class="row justify-content-between mx-0">
+          <div class="col-lg-8 px-0">
+            <div class="block">
+              <div class="row mx-0 align-items-center">
+                <div class="col px-0">
+                  <div class="coin__info d-flex align-items-center">
+                    <div class="coin__type mx-5">
+                      <img class="w-100" src="images/exchange_coin/icons_(5).jpeg" alt="">
+                    </div>
+                    <div class="coin__tittle">
+                      <h4>binance</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-5 px-0">
+                  <div class="coin__info d-flex justify-content-end">
+                    <a href="#"  class="btn__base coin__btn text-white d-block bg__blue border-0 mx-5 d-flex align-items-center">
+                      <div class="coin__add me-4">
+                        <img class="w-100" src="images/plus.png" alt="">
+                      </div>
+                      Ajouter XIsx
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="block">
+              <div class="row mx-0 align-items-center">
+                <div class="col">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button d-flex flex-column align-items-center shadow-none text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <div class="w-50">
+                            <h5 class="font__25 mb-3">
+                              Tutorial to get API key
+                            </h5>
+                          </div>
+                          <div class="w-50">
+                            <img class="accordion__icon" src="images/wallet.png" alt="">
+                          </div>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body d-none">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora magnam saepe consectetur non quibusdam voluptates, culpa officia quisquam architecto recusandae.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="block sign_in">
+              <div class="row justify-content-between mx-5 px-sm-5">
+                <div class="col-md-4 px-0 mb-5">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">
+                        Cle d' API
+                      </label>
+                      <input type="email" class="form-control rounded-pill py-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">
+                        Cle d' API secrete
+                      </label>
+                      <input type="password" class="form-control rounded-pill py-3" id="exampleInputPassword1">
+                    </div>
+                    
+                    <button type="submit" class="btn__base text-white d-block w-100 btn__gui border-0 mt-5">Sign in</button>
+                  </form>
+                </div>
+                <div class="col-md-5 px-0">
+                  <!-- WARN  -->
+                  <div class="card_layout text-center text-white warning__card">
+                    <h1 class="mb-5 font__700">Warning
+                    </h1>
+                    <ul class=" mx-auto my-5 pb-5 ps-5 ms-5">
+                      <li class="font__13 text-start">
+                        Lorem ipsum dolor adipisicing. Quod, perferendis?
+                      </li>
+                    </ul>
+                    <div class="my-5">
+                      <a class="px-5 py-3 bg-white rounded-pill text__blue ms-4 font__15 font__500 " href="#">Upgrade</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <!-- WARN  -->
+            <div class="card_layout text-start text-white blue__card ms-lg-auto  ">
+              <h2 class="mb-5">Impots : 2021
+              </h2>
+              <h2 class="py-5 font__700 text-capitalize">
+                Only for Premium Memebrs
+              </h2>
+              <div class="my-5 pt-5 text-center">
+              <a class="px-5 py-3 bg-white border__r_1 text__blue font__15 font__500" href="#">
+                Subscribe to Premium
+              </a>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <footer class="bg__black pb-5">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-3 mb-5 mb-xl-0">
+            <div class="logo_footer mb-5">
+              <a class="navbar-brand" href="index.html">
+                <img class="img-fluid" src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="content__footer">
+              <p class="text__gray font__13">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente impedit provident laboriosam ex tempore inventore quasi quia! Aperiam, blanditiis quo, molestiae quia aut esse, voluptas odit rem.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-2 mb-5 mb-xl-0">
+            <h3 class="text-white text-capitalize mb-5 font__25">useful link</h3>
+            <div class="d-md-flex justify-content-between d-block">
+              <ul class="list-unstyled text-capitalize">
+                <li class="mb-3"><a href="index.html" class="text__gray">home</a></li>
+                <li class="mb-3"><a href="about.html" class="text__gray">about</a></li>
+                <li class="mb-3"><a href="plans.html" class="text__gray">plans</a></li>
+              </ul>
+              <ul class="list-unstyled text-capitalize">
+                <li class="mb-3"><a href="dashboard.html" class="text__gray">Dashboard</a></li>
+                <li class="mb-3"><a href="login.html" class="text__gray">Log In</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-8 d-none d-md-block  d-flex align-items-end align-self-end">
+            <div class="w-100">
+              <h3 class="text-white text-capitalize mb-5 font__18 text-center">Join Our mailing list!</h3>
+              <form class="w-100">
+                <div class="mb-0 footer__mailing">
+                  <input type="email" class="form-control font__700" id="exampleInputPassword1" placeholder="Enter Your Email">
+                  <button class="text-white font__700 btn__gui">Join Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="bg__gray my-5">
+      <div class="footer__owner text-center">
+        <p class="text__gray">
+          © 2022 Cryptic Copyrights, All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>

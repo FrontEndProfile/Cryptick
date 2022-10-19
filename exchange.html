@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FAV ADD  -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- STYLE LINK  -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Exchange!</title>
+  </head>
+  <body class="bg_body">
+    <header id="header" class="py-4 bg__white">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container px-0">
+          <a class="navbar-brand" href="index.html">
+            <img class="img-fluid" src="images/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0 align-items-lg-center align-items-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="dashboard.html">
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  Ajouter Donnees
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Voir les donnees
+                </a>
+              </li>
+              
+            </ul>
+            <!-- account id  -->
+            <!-- Example single danger button -->
+            <div class="d-flex justify-content-end me-5 me-md-0">
+              <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle shadow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="w-100" src="images/user.png" alt="">
+                </button>
+                <ul class="dropdown-menu primary__radius shadow-lg dropdown-menu-end border-0">
+                  <li><a class="dropdown-item d-flex align-items-baseline" href="plans.html">
+                    <div class="">
+                      <span><img class="icon" src="images/plan_icon.jpeg" alt=""></span> 
+                    </div>
+                    <div class="">
+                      <p class="mb-0 font__18 line_0_7 text__blue__dark">Plane</p><small class="font__13 text-black-50">chose your plan</small>
+                    </div>
+                  </a></li>
+  
+                  <li><a class="dropdown-item d-flex align-items-baseline" href="sitting.html">
+                    <div class="">
+                      <span><img class="icon" src="images/sitting.jpeg" alt=""></span> 
+                    </div>
+                    <div class="">
+                      <p class="mb-0 font__18 line_0_7 text__blue__dark">Sittings</p><small class="font__13 text-black-50">Mange your Sittings</small>
+                    </div>
+                  </a></li>
+  
+                  <li><a class="dropdown-item d-flex align-items-baseline" href="login.html">
+                    <div class="">
+                      <span><img class="icon" src="images/plan_icon.jpeg" alt=""></span> 
+                    </div>
+                    <div class="">
+                      <p class="mb-0 font__18 line_0_7 text__blue__dark">LogOut</p><small class="font__13 text-black-50">Logout out Dashboard</small>
+                    </div>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </nav>
+    </header>
+
+    <section class="see__tables">
+      <div class="container">
+        <div class="col">
+          <div class="row justify-content-between mx-0">
+            <div class="col-lg-8">
+              <div class="block px-5">
+                <div class="row align-items-center mb-5">
+                  <div class="col-md-6">
+                    <form class="see_data">
+                      <input type="text" class="py-3"  placeholder="Search here">
+                      <div class="input_icon">
+                        <i class="bi bi-search"></i>
+                      </div>
+                    </form>
+                  </div>
+                  
+                </div>
+  
+                <div class="row align-items-end mb-5">
+                  <div class="col-md-6">
+                    <div class="chart__btns d-none d-lg-block">
+                      <ul class="list-unstyled d-flex flex-wrap">
+                        <li class="me-4 border border-1 radius_mini mb-3"><a class="text-capitalize" href="#">all</a></li>
+                        <li class="me-4 border border-1 radius_mini mb-3"><a class="text-capitalize" href="#">ty</a></li>
+                        <li class="me-4 border border-1 radius_mini mb-3"><a class="text-capitalize" href="#">last year</a></li>
+                        <li class="me-4 border border-1 radius_mini mb-3"><a class="text-capitalize" href="#">this year</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="coin__info d-flex justify-content-end">
+                      <a href="#"  class="btn__base coin__btn text-white d-block bg__blue border-0 mx-5 d-flex align-items-center">
+                        <div class="coin__add me-4">
+                          <img class="w-100" src="images/plus.png" alt="">
+                        </div>
+                        Ajouter XIsx
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <!-- WARN  -->
+              <div class="card_layout text-start text-white blue__card ms-lg-auto  ">
+                <h2 class="mb-5">Impots : 2021
+                </h2>
+                <h2 class="py-5 font__700 text-capitalize">
+                  Only for Premium Memebrs
+                </h2>
+                <div class="my-5 pt-5 text-center">
+                <a class="px-5 py-3 bg-white border__r_1 text__blue font__15 font__500" href="#">
+                  Subscribe to Premium
+                </a>
+  
+                </div>
+  
+              </div>
+            </div>
+          </div>
+  
+          <div class="row exchnage mb-5">
+            <div class="col-lg-8">
+              <div class="exchange_btn my-5">
+                <a href="#" class="btn font__15 bg__blue text-white px-5 shadow-none">Exchange</a>
+              </div>
+              <div class="block px-5">
+                <div class="gridy overflow-auto">
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck1" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck1">
+                        <img src="images/exchange_coin/icons_().jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck2" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck2">
+                        <img src="images/exchange_coin/icons_(2).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck3" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck3">
+                        <img src="images/exchange_coin/icons_(3).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck4" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck4">
+                        <img src="images/exchange_coin/icons_(4).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+  
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck5" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck5">
+                        <img src="images/exchange_coin/icons_(5).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck6" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck6">
+                        <img src="images/exchange_coin/icons_(6).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck7" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck7">
+                        <img src="images/exchange_coin/icons_(7).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck8" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck8">
+                        <img src="images/exchange_coin/icons_(8).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+  
+                  <!-- next clone  -->
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck9" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck9">
+                        <img src="images/exchange_coin/icons_(9).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck10" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck10">
+                        <img src="images/exchange_coin/icons_(10).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck11" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck11">
+                        <img src="images/exchange_coin/icons_(11).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck12" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck12">
+                        <img src="images/exchange_coin/icons_(12).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row exchnage mb-5">
+            <div class="col-lg-8">
+              <div class="exchange_btn my-5">
+                <a href="#" class="btn font__15 bg__blue text-white px-5 shadow-none">Exchange</a>
+              </div>
+              <div class="block px-5">
+                <div class="gridy overflow-auto">
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck13" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck13">
+                        <img src="images/exchange_coin/icons_().jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck14" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck14">
+                        <img src="images/exchange_coin/icons_(13).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck15" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck15">
+                        <img src="images/exchange_coin/icons_(14).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck16" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck16">
+                        <img src="images/exchange_coin/icons_(28).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+  
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck17" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck17">
+                        <img src="images/exchange_coin/icons_(31).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck18" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck18">
+                        <img src="images/exchange_coin/icons_(19).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck19" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck19">
+                        <img src="images/exchange_coin/icons_(39).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck20" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck20">
+                        <img src="images/exchange_coin/icons_(2).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+  
+                  <!-- next clone  -->
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck21" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck21">
+                        <img src="images/exchange_coin/icons_(38).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck22" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck22">
+                        <img src="images/exchange_coin/icons_(33).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck23" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck23">
+                        <img src="images/exchange_coin/icons_(17).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid_item">
+                    <div class="btn-group w-100 h-100" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check shadow-none" id="btncheck22" autocomplete="off">
+                      <label class=" btn-outline-primary d-flex align-items-center py-3 px-5" for="btncheck22">
+                        <img src="images/exchange_coin/icons_(31).jpeg" alt="">
+                        <p class="font__15 ms-4 text-black-50 text-capitalize">
+                          Lorem ipsum
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

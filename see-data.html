@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FAV ADD  -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- STYLE LINK  -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>SEE ALL DATA!</title>
+  </head>
+  <body>
+    <header id="header" class="py-4 bg__white">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container px-0">
+          <a class="navbar-brand" href="index.html">
+            <img class="img-fluid" src="images/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0 align-items-lg-center align-items-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="dashboard.html">
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  Ajouter Donnees
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Voir les donnees
+                </a>
+              </li>
+              
+            </ul>
+            <!-- account id  -->
+            <!-- Example single danger button -->
+            <div class="d-flex justify-content-end me-5 me-md-0">
+              <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle shadow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="w-100" src="images/user.png" alt="">
+                </button>
+                <ul class="dropdown-menu primary__radius shadow-lg dropdown-menu-end border-0">
+                  <li><a class="dropdown-item d-flex align-items-baseline" href="plans.html">
+                    <div class="">
+                      <span><img class="icon" src="images/plan_icon.jpeg" alt=""></span> 
+                    </div>
+                    <div class="">
+                      <p class="mb-0 font__18 line_0_7 text__blue__dark">Plane</p><small class="font__13 text-black-50">chose your plan</small>
+                    </div>
+                  </a></li>
+  
+                  <li><a class="dropdown-item d-flex align-items-baseline" href="sitting.html">
+                    <div class="">
+                      <span><img class="icon" src="images/sitting.jpeg" alt=""></span> 
+                    </div>
+                    <div class="">
+                      <p class="mb-0 font__18 line_0_7 text__blue__dark">Sittings</p><small class="font__13 text-black-50">Mange your Sittings</small>
+                    </div>
+                  </a></li>
+  
+                  <li><a class="dropdown-item d-flex align-items-baseline" href="login.html">
+                    <div class="">
+                      <span><img class="icon" src="images/plan_icon.jpeg" alt=""></span> 
+                    </div>
+                    <div class="">
+                      <p class="mb-0 font__18 line_0_7 text__blue__dark">LogOut</p><small class="font__13 text-black-50">Logout out Dashboard</small>
+                    </div>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </nav>
+    </header>
+    <section class="see__tables">
+      <div class="container">
+        <div class="row justify-content-between mx-0">
+          <div class="col-lg-8">
+            <div class="block px-5">
+              <!-- CHECKS  -->
+              <div class="form-check">
+                <input class="form-check-input p-3 me-3" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label py-1 font__15" for="defaultCheck1">
+                  Enlever les transferets entre exchange
+                </label>
+              </div>
+              <!-- ===  -->
+              <div class="form-check">
+                <input class="form-check-input p-3 me-3" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label py-1 font__15" for="flexRadioDefault1">
+                  Justes les transactions
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input p-3 me-3" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label py-1 font__15" for="flexRadioDefault2">
+                  Toutes les donnees
+                </label>
+              </div>
+              <div class="">
+                <div class="coin__info d-flex justify-content-end">
+                  <button type="button" class="btn__base coin__btn text-white d-block bg__blue border-0 mx-5 d-flex align-items-center">
+                    Compiler les donnees
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="row exchnage">
+          <div class="col">
+            <div class="block px-5">
+              <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                  <form class="see_data">
+                    <input type="text" class="py-3"  placeholder="Search here">
+                    <div class="input_icon">
+                      <i class="bi bi-search"></i>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-6">
+                  <div class="">
+                    <div class="coin__info d-flex justify-content-end">
+                      <button type="button" class="btn__base coin__btn text-white d-block bg__blue border-0 mx-5 d-flex align-items-center shadow-none">
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ALL DATA IN TABLE  -->
+              <div class="exchnage__tables__layout overflow-auto border-0">
+                <table class="table mb-0 ">
+                  <thead class="">
+                    <tr>
+                      <th scope="col" class="font__13 font__400 text__dark_gray text-center">
+                        Time
+                      </th>
+                      <th scope="col" class="font__13 font__400 text__dark_gray text-center">
+                        Transferred Actif
+                      </th>
+                      <th scope="col" class="font__13 font__400 text__dark_gray text-center">
+                        Transferred Quantity
+                      </th>
+                      <th scope="col" class="font__13 font__400 text__dark_gray text-center">
+                        Market
+                      </th>
+                      <th scope="col" class="font__13 font__400 text__dark_gray text-center">
+                        Buy/Sell
+                      </th>
+                      <th scope="col" class="font__13 font__400 text__dark_gray text-center">
+                        Quantity
+                      </th>
+                      <th scope="col" class="font__13 font__400 text__dark_gray text-center">
+                        Price
+                      </th>
+                      <th scope="col" class="font__13 font__400 text__dark_gray text-center">
+                        Comment
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="font__11 font__500 text-center align-middle text-black-50">00:12:58</th>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        Bitcoin
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        50
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        Binance
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle tab__green_text">
+                        Buy 
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle">
+                        50
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        $ 48000
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50 d-flex align-items-center justify-content-center">
+                        <div class="dots light_red"></div>
+                        delivered
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="font__11 font__500 text-center align-middle text-black-50">00:12:58</th>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        Bitcoin
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        50
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        Binance
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle tab__red_text">
+                        Buy 
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        50
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        $ 48000
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50 d-flex align-items-center justify-content-center">
+                        <div class="dots tab__green"></div>
+                        delivered
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="font__11 font__500 text-center align-middle text-black-50">00:12:58</th>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        Bitcoin
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        50
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        Binance
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle tab__green_text">
+                        Buy 
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        50
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        $ 48000
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50 d-flex align-items-center justify-content-center">
+                        <div class="dots tab__blue"></div>
+                        delivered
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="font__11 font__500 text-center align-middle text-black-50">00:12:58</th>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        Bitcoin
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        50
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        Binance
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle tab__red_text">
+                        Buy 
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        50
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50">
+                        $ 48000
+                      </td>
+                      <td class="font__11 font__500 text-center align-middle text-black-50 d-flex align-items-center justify-content-center">
+                        <div class="dots light_red"></div>
+                        delivered
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

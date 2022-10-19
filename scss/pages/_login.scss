@@ -1,0 +1,13 @@
+.login {
+  form {
+    input {
+      border-radius: 2rem;
+      border: 1px solid $light__gray;
+      @include pad__l_r(2);
+      @include margin__b(2.5);
+      @include font__size(1.6);
+      @include section__(0.8);
+
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.exchnage{
+  &__tables {
+    .table > :not(:first-child) {
+      border-top: none;
+    }
+    &__layout {
+      border: 0.5px solid $light__gray;
+      border-radius: 1rem;
+      overflow: hidden;
+      padding: 3rem 0rem 0rem 0rem;
+      width: 100%;
+      min-width: 56rem;
+    }
+  }
+  thead {
+    th {
+      box-shadow: none !important;
+    }
+  }
+  .table > :not(caption) > * > * {
+    border-bottom: none;
+  padding: 1rem 0rem;
+  }
+  table {
+    thead {
+      background-color: $table_head;
+    }
+    tbody {
+      tr {
+        
+        &:nth-child(even){
+          background-color: $light__v;
+        }
+      }
+    }
+  }
+  .exchnage__head {
+    .exchnage__input {
+      input {
+        border: 1px solid $light__gray;
+        border-radius: 1rem;
+        padding: 0.5rem 3rem;
+        font-size: 1.5rem;
+      }
+      position: relative;
+
+    }
+    .input_icon {
+      position: absolute;
+      top: 6%;
+      left: 3%;
+      width: 1.6rem;
+    }
+    .exchnage__btns {
+      .btn {
+        width: 8rem;
+      }
+    }
+  }
+}
+.dots {
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+
+// .exchnage_add {
+//   .block {
+//     form {
+//       padding: 0rem 3rem;
+//     }
+//   }
+// }
+.gridy {
+  display: grid;
+  // grid-template-rows: 300;
+  grid-template-columns: 200px 200px  200px 200px;
+  border: 1px solid $light__gray;
+  border-radius: 16px;
+  overflow: hidden;
+  grid-gap: 1px;
+  background-color: $light__gray;
+  // @include media__max(1200){
+  // grid-template-columns: 200px 200px  200px;
+  // }
+  .grid_item {
+    // background-color: red;
+    height: 70px;
+    background-color: white;
+    label {
+      width: 100% !important;
+      img {
+        width: 2.2rem;
+      }
+    }
+    .btn-check:checked + .btn-outline-primary {
+      // color: #fff;
+      background-color: #e9effb !important;
+      border-color: #e9effb !important;
+      position: relative;
+      &::after {
+        position: absolute;
+        bottom: 10px;
+        right: 5px;
+        content: "";
+        background-image: url(../images/checked_icon.png);
+        background-size: 1rem;
+        width: 1rem;
+        height: 1rem;
+        
+      }
+    }
+    
+  }
+}

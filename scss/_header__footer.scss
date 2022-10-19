@@ -1,0 +1,70 @@
+#header {
+  position: sticky;
+  top: 0px;
+  z-index: 99 !important;
+}
+.bg__white {
+  @include media__min(991){
+    background: white;
+  }
+}
+header {
+  background-color: $light__v;
+  @include media__min(991){
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  nav {
+    position: relative;
+    z-index: 0;
+  }
+  nav {
+    ul li a{
+      font-weight: 600;
+    }
+  }
+}
+header .navbar-light .navbar-nav .nav-link.active , .line__bottom {
+  color: $blue;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    width: 60%;
+    height: 0.2rem;
+    border-radius: 1rem;
+    background-color: $blue;
+  }
+}
+// FOOTER 
+.footer__mailing {
+  input {
+    background-color: #1f2124 !important;
+    padding: 1.5rem 2.8rem;
+    border-radius: 2.5rem;
+    @include font__size(1.6);
+    border: none;
+    color: $blue !important;
+  }
+  position: relative;
+  button {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0,-50%);
+    padding: 1.5rem 3.2rem;
+    border-radius: 2.5rem;
+    border: none;
+  }
+}
+footer {
+  .row {
+    @include media__max(550){
+      padding-left: 6rem !important;
+      padding-right: 6rem !important;
+      padding-top: 2.5rem;
+    }
+  }
+  
+}
